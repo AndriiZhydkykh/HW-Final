@@ -1,0 +1,313 @@
+2022-08-06T07:03:39.074Z INFO @wdio/cli:launcher: Run onPrepare hook
+2022-08-06T07:03:39.082Z INFO chromedriver: Start Chromedriver (C:\Users\user\Desktop\Test Project\node_modules\chromedriver\lib\chromedriver\chromedriver.exe) with args --port=9515 --url-base=/
+2022-08-06T07:03:39.187Z INFO chromedriver: Starting ChromeDriver 103.0.5060.53 (a1711811edd74ff1cf2150f36ffa3b0dae40b17f-refs/branch-heads/5060@{#853}) on port 9515
+2022-08-06T07:03:39.190Z INFO chromedriver: Only local connections are allowed.
+2022-08-06T07:03:39.191Z INFO chromedriver: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.        
+2022-08-06T07:03:39.204Z INFO chromedriver: ChromeDriver was started successfully.
+2022-08-06T07:03:39.253Z INFO @wdio/cli:launcher: Run onWorkerStart hook
+2022-08-06T07:03:39.256Z INFO @wdio/cli:launcher: Run onWorkerStart hook
+2022-08-06T07:03:39.260Z INFO @wdio/local-runner: Start worker 0-0 with arg: run,wdio.conf.js
+2022-08-06T07:03:39.290Z INFO @wdio/local-runner: Start worker 0-1 with arg: run,wdio.conf.js
+[0-0] 2022-08-06T07:03:41.020Z INFO @wdio/local-runner: Run worker command: run
+[0-1] 2022-08-06T07:03:41.031Z INFO @wdio/local-runner: Run worker command: run
+[0-0] RUNNING in chrome - C:\Users\user\Desktop\Test Project\test\specs\e2e.steps.js
+[0-0] 2022-08-06T07:03:41.941Z INFO webdriver: Initiate new session using the WebDriver protocol
+[0-1] RUNNING in chrome - C:\Users\user\Desktop\Test Project\test\specs\Home.work.lesson.14 .js
+[0-1] 2022-08-06T07:03:41.967Z INFO webdriver: Initiate new session using the WebDriver protocol
+[0-0] 2022-08-06T07:03:42.169Z INFO webdriver: [POST] http://localhost:9515/session
+[0-0] 2022-08-06T07:03:42.170Z INFO webdriver: DATA {
+[0-0]   capabilities: {
+[0-0]     alwaysMatch: { browserName: 'chrome', acceptInsecureCerts: true },
+[0-0]     firstMatch: [ {} ]
+[0-0]   },
+[0-0]   desiredCapabilities: { browserName: 'chrome', acceptInsecureCerts: true }
+[0-0] }
+[0-1] 2022-08-06T07:03:42.193Z INFO webdriver: [POST] http://localhost:9515/session
+[0-1] 2022-08-06T07:03:42.194Z INFO webdriver: DATA {
+[0-1]   capabilities: {
+[0-1]     alwaysMatch: { browserName: 'chrome', acceptInsecureCerts: true },
+[0-1]     firstMatch: [ {} ]
+[0-1]   },
+[0-1]   desiredCapabilities: { browserName: 'chrome', acceptInsecureCerts: true }
+[0-1] }
+
+DevTools listening on ws://127.0.0.1:61356/devtools/browser/439c311b-e039-47d1-8edd-4fa0b16a4f6f
+2022-08-06T07:03:43.796Z WARN chromedriver: [1659769423.796][WARNING]: This version of ChromeDriver has not been tested with Chrome version 104.
+[0-0] 2022-08-06T07:03:44.064Z INFO webdriver: COMMAND deleteSession()
+[0-0] 2022-08-06T07:03:44.065Z INFO webdriver: [DELETE] http://localhost:9515/session/93eaf7f7f58b17da2514bb53e0133b9f
+
+DevTools listening on ws://127.0.0.1:61364/devtools/browser/d0172b30-3419-4269-94db-3e818a7d5c63
+2022-08-06T07:03:44.961Z WARN chromedriver: [1659769424.961][WARNING]: This version of ChromeDriver has not been tested with Chrome version 104.
+[0-1] 2022-08-06T07:03:45.478Z INFO webdriver: COMMAND navigateTo("https://webdriver.io/docs/api")
+[0-1] 2022-08-06T07:03:45.481Z INFO webdriver: [POST] http://localhost:9515/session/8961e0bf64d61604d75207a6ed2f8239/url
+[0-1] 2022-08-06T07:03:45.487Z INFO webdriver: DATA { url: 'https://webdriver.io/docs/api' }
+[0-0] PASSED in chrome - C:\Users\user\Desktop\Test Project\test\specs\e2e.steps.js
+2022-08-06T07:03:45.894Z INFO @wdio/cli:launcher: Run onWorkerEnd hook
+[0-1] 2022-08-06T07:03:46.939Z INFO webdriver: COMMAND findElement("xpath", "//*[text()="JSONWire protocol"]")
+[0-1] 2022-08-06T07:03:46.940Z INFO webdriver: [POST] http://localhost:9515/session/8961e0bf64d61604d75207a6ed2f8239/element
+[0-1] 2022-08-06T07:03:46.940Z INFO webdriver: DATA { using: 'xpath', value: '//*[text()="JSONWire protocol"]' }
+[0-1] 2022-08-06T07:03:47.004Z INFO webdriver: RESULT {
+[0-1]   'element-6066-11e4-a52e-4f735466cecf': 'a9fc6b38-6858-40b2-95f5-de591aba1557'
+[0-1] }
+[0-1] 2022-08-06T07:03:47.023Z INFO webdriver: COMMAND getElementAttribute("a9fc6b38-6858-40b2-95f5-de591aba1557", "<Screenshot[base64]>")
+[0-1] 2022-08-06T07:03:47.024Z INFO webdriver: [GET] http://localhost:9515/session/8961e0bf64d61604d75207a6ed2f8239/element/a9fc6b38-6858-40b2-95f5-de591aba1557/attribute/href
+[0-1] 2022-08-06T07:03:47.042Z INFO webdriver: RESULT https://www.selenium.dev/documentation/legacy/json_wire_protocol/
+[0-1] 2022-08-06T07:03:47.043Z INFO webdriver: COMMAND getWindowHandles()
+[0-1] 2022-08-06T07:03:47.045Z INFO webdriver: [GET] http://localhost:9515/session/8961e0bf64d61604d75207a6ed2f8239/window/handles
+[0-1] 2022-08-06T07:03:47.054Z INFO webdriver: RESULT [ 'CDwindow-609731555566A27DF9CC13F59AD87F09' ]
+[0-1] 2022-08-06T07:03:47.057Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+[0-1] 2022-08-06T07:03:47.057Z INFO webdriver: [POST] http://localhost:9515/session/8961e0bf64d61604d75207a6ed2f8239/execute/sync
+[0-1] 2022-08-06T07:03:47.058Z INFO webdriver: DATA {
+[0-1]   script: 'newWindow(...) [149 bytes]',
+[0-1]   args: [
+[0-1]     'https://www.selenium.dev/documentation/legacy/json_wire_protocol/',
+[0-1]     '',
+[0-1]     ''
+[0-1]   ]
+[0-1] }
+[0-1] 2022-08-06T07:03:47.242Z INFO webdriver: COMMAND getWindowHandles()
+[0-1] 2022-08-06T07:03:47.242Z INFO webdriver: [GET] http://localhost:9515/session/8961e0bf64d61604d75207a6ed2f8239/window/handles
+[0-1] 2022-08-06T07:03:47.301Z INFO webdriver: RESULT [
+[0-1]   'CDwindow-609731555566A27DF9CC13F59AD87F09',
+[0-1]   'CDwindow-2723F4083538F19EBCCBDADF731F70FA'
+[0-1] ]
+[0-1] 2022-08-06T07:03:47.302Z INFO webdriver: COMMAND getWindowHandles()
+[0-1] 2022-08-06T07:03:47.303Z INFO webdriver: [GET] http://localhost:9515/session/8961e0bf64d61604d75207a6ed2f8239/window/handles
+[0-1] 2022-08-06T07:03:47.424Z INFO webdriver: RESULT [
+[0-1]   'CDwindow-609731555566A27DF9CC13F59AD87F09',
+[0-1]   'CDwindow-2723F4083538F19EBCCBDADF731F70FA'
+[0-1] ]
+[0-1] 2022-08-06T07:03:47.426Z INFO webdriver: COMMAND switchToWindow("CDwindow-2723F4083538F19EBCCBDADF731F70FA")
+[0-1] 2022-08-06T07:03:47.426Z INFO webdriver: [POST] http://localhost:9515/session/8961e0bf64d61604d75207a6ed2f8239/window
+[0-1] 2022-08-06T07:03:47.426Z INFO webdriver: DATA { handle: 'CDwindow-2723F4083538F19EBCCBDADF731F70FA' }
+[0-1] 2022-08-06T07:03:47.484Z INFO webdriver: COMMAND findElement("xpath", "//*[text()="RESTful web service"]")
+[0-1] 2022-08-06T07:03:47.485Z INFO webdriver: [POST] http://localhost:9515/session/8961e0bf64d61604d75207a6ed2f8239/element
+[0-1] 2022-08-06T07:03:47.485Z INFO webdriver: DATA { using: 'xpath', value: '//*[text()="RESTful web service"]' }
+[0-1] 2022-08-06T07:03:49.029Z INFO webdriver: RESULT {
+[0-1]   'element-6066-11e4-a52e-4f735466cecf': '4477b159-5f5d-4782-8cd0-bfeadc6dcce8'
+[0-1] }
+[0-1] 2022-08-06T07:03:49.037Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+[0-1] 2022-08-06T07:03:49.038Z INFO webdriver: [POST] http://localhost:9515/session/8961e0bf64d61604d75207a6ed2f8239/execute/sync
+[0-1] 2022-08-06T07:03:49.038Z INFO webdriver: DATA {
+[0-1]   script: 'isElementDisplayed(...) [7962 bytes]',
+[0-1]   args: [
+[0-1]     {
+[0-1]       'element-6066-11e4-a52e-4f735466cecf': '4477b159-5f5d-4782-8cd0-bfeadc6dcce8',
+[0-1]       ELEMENT: '4477b159-5f5d-4782-8cd0-bfeadc6dcce8'
+[0-1]     }
+[0-1]   ]
+[0-1] }
+[0-1] 2022-08-06T07:03:49.065Z INFO webdriver: RESULT true
+[0-1] Element is displayed:true
+[0-1] 2022-08-06T07:03:49.066Z INFO webdriver: COMMAND getWindowHandles()
+[0-1] 2022-08-06T07:03:49.067Z INFO webdriver: [GET] http://localhost:9515/session/8961e0bf64d61604d75207a6ed2f8239/window/handles
+[0-1] 2022-08-06T07:03:49.075Z INFO webdriver: RESULT [
+[0-1]   'CDwindow-609731555566A27DF9CC13F59AD87F09',
+[0-1]   'CDwindow-2723F4083538F19EBCCBDADF731F70FA'
+[0-1] ]
+[0-1] 2022-08-06T07:03:49.076Z INFO webdriver: COMMAND switchToWindow("CDwindow-609731555566A27DF9CC13F59AD87F09")
+[0-1] 2022-08-06T07:03:49.076Z INFO webdriver: [POST] http://localhost:9515/session/8961e0bf64d61604d75207a6ed2f8239/window
+[0-1] 2022-08-06T07:03:49.077Z INFO webdriver: DATA { handle: 'CDwindow-609731555566A27DF9CC13F59AD87F09' }
+[0-1] 2022-08-06T07:03:49.201Z INFO webdriver: COMMAND getUrl()
+[0-1] 2022-08-06T07:03:49.201Z INFO webdriver: [GET] http://localhost:9515/session/8961e0bf64d61604d75207a6ed2f8239/url
+[0-1] 2022-08-06T07:03:49.426Z INFO webdriver: RESULT https://webdriver.io/docs/api/
+[0-1] 2022-08-06T07:03:49.427Z INFO webdriver: COMMAND findElement("xpath", "//h1")
+[0-1] 2022-08-06T07:03:49.427Z INFO webdriver: [POST] http://localhost:9515/session/8961e0bf64d61604d75207a6ed2f8239/element
+[0-1] 2022-08-06T07:03:49.427Z INFO webdriver: DATA { using: 'xpath', value: '//h1' }
+[0-1] 2022-08-06T07:03:49.504Z INFO webdriver: RESULT {
+[0-1]   'element-6066-11e4-a52e-4f735466cecf': '14e51296-67a8-4d68-83fc-2f593151d6a6'
+[0-1] }
+[0-1] 2022-08-06T07:03:49.512Z INFO webdriver: COMMAND getElementText("14e51296-67a8-4d68-83fc-2f593151d6a6")
+[0-1] 2022-08-06T07:03:49.513Z INFO webdriver: [GET] http://localhost:9515/session/8961e0bf64d61604d75207a6ed2f8239/element/14e51296-67a8-4d68-83fc-2f593151d6a6/text 
+[0-1] 2022-08-06T07:03:49.560Z INFO webdriver: RESULT Introduction
+[0-1] 2022-08-06T07:03:49.563Z INFO webdriver: COMMAND takeScreenshot()
+[0-1] 2022-08-06T07:03:49.563Z INFO webdriver: [GET] http://localhost:9515/session/8961e0bf64d61604d75207a6ed2f8239/screenshot
+[12056:9484:0806/100349.823:ERROR:device_event_log_impl.cc(214)] [10:03:49.824] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: ╧Ёшёюхфшэхээюх ъ ёшёЄхьх єёЄЁющёЄтю эх ЁрсюЄрхЄ. (0x1F)
+[12056:9484:0806/100349.826:ERROR:device_event_log_impl.cc(214)] [10:03:49.826] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: ╧Ёшёюхфшэхээюх ъ ёшёЄхьх єёЄЁющёЄтю эх ЁрсюЄрхЄ. (0x1F)
+[0-1] 2022-08-06T07:03:49.879Z INFO webdriver: RESULT iVBORw0KGgoAAAANSUhEUgAABQ8AAANFCAYAAADVqgqfAAAAAXNSR0IArs4c6...
+[0-1] 2022-08-06T07:03:49.885Z INFO webdriver: COMMAND findElement("css selector", "[href="https://twitter.com/webdriverio"]")
+[0-1] 2022-08-06T07:03:49.886Z INFO webdriver: [POST] http://localhost:9515/session/8961e0bf64d61604d75207a6ed2f8239/element
+[0-1] 2022-08-06T07:03:49.886Z INFO webdriver: DATA {
+[0-1]   using: 'css selector',
+[0-1]   value: '[href="https://twitter.com/webdriverio"]'
+[0-1] }
+[0-1] 2022-08-06T07:03:49.932Z INFO webdriver: RESULT {
+[0-1]   'element-6066-11e4-a52e-4f735466cecf': '7adb2397-a60a-44bc-9042-2fb3bb0ad03e'
+[0-1] }
+[0-1] 2022-08-06T07:03:49.937Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+[0-1] 2022-08-06T07:03:49.938Z INFO webdriver: [POST] http://localhost:9515/session/8961e0bf64d61604d75207a6ed2f8239/execute/sync
+[0-1] 2022-08-06T07:03:49.938Z INFO webdriver: DATA {
+[0-1]   script: 'isElementDisplayed(...) [7962 bytes]',
+[0-1]   args: [
+[0-1]     {
+[0-1]       'element-6066-11e4-a52e-4f735466cecf': '7adb2397-a60a-44bc-9042-2fb3bb0ad03e',
+[0-1]       ELEMENT: '7adb2397-a60a-44bc-9042-2fb3bb0ad03e'
+[0-1]     }
+[0-1]   ]
+[0-1] }
+[0-1] 2022-08-06T07:03:49.985Z INFO webdriver: RESULT true
+[0-1] Twitter isDisplayed: true
+[0-1] 2022-08-06T07:03:49.987Z INFO webdriver: COMMAND findElement("css selector", "[href="https://twitter.com/webdriverio"]")
+[0-1] 2022-08-06T07:03:49.988Z INFO webdriver: [POST] http://localhost:9515/session/8961e0bf64d61604d75207a6ed2f8239/element
+[0-1] 2022-08-06T07:03:49.988Z INFO webdriver: DATA {
+[0-1]   using: 'css selector',
+[0-1]   value: '[href="https://twitter.com/webdriverio"]'
+[0-1] }
+[0-1] 2022-08-06T07:03:50.007Z INFO webdriver: RESULT {
+[0-1]   'element-6066-11e4-a52e-4f735466cecf': '7adb2397-a60a-44bc-9042-2fb3bb0ad03e'
+[0-1] }
+[0-1] 2022-08-06T07:03:50.013Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+[0-1] 2022-08-06T07:03:50.014Z INFO webdriver: [POST] http://localhost:9515/session/8961e0bf64d61604d75207a6ed2f8239/execute/sync
+[0-1] 2022-08-06T07:03:50.014Z INFO webdriver: DATA {
+[0-1]   script: 'isElementDisplayed(...) [7962 bytes]',
+[0-1]   args: [
+[0-1]     {
+[0-1]       'element-6066-11e4-a52e-4f735466cecf': '7adb2397-a60a-44bc-9042-2fb3bb0ad03e',
+[0-1]       ELEMENT: '7adb2397-a60a-44bc-9042-2fb3bb0ad03e'
+[0-1]     }
+[0-1]   ]
+[0-1] }
+[0-1] 2022-08-06T07:03:50.037Z INFO webdriver: RESULT true
+[0-1] 2022-08-06T07:03:50.038Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+[0-1] 2022-08-06T07:03:50.039Z INFO webdriver: [POST] http://localhost:9515/session/8961e0bf64d61604d75207a6ed2f8239/execute/sync
+[0-1] 2022-08-06T07:03:50.039Z INFO webdriver: DATA {
+[0-1]   script: 'isElementInViewport(...) [564 bytes]',
+[0-1]   args: [
+[0-1]     {
+[0-1]       'element-6066-11e4-a52e-4f735466cecf': '7adb2397-a60a-44bc-9042-2fb3bb0ad03e',
+[0-1]       ELEMENT: '7adb2397-a60a-44bc-9042-2fb3bb0ad03e'
+[0-1]     }
+[0-1]   ]
+[0-1] }
+[0-1] 2022-08-06T07:03:50.052Z INFO webdriver: RESULT false
+[0-1] Twitter isDisplayedInViewport: false
+[0-1] 2022-08-06T07:03:50.053Z INFO webdriver: COMMAND findElement("css selector", "[href="https://twitter.com/webdriverio"]")
+[0-1] 2022-08-06T07:03:50.053Z INFO webdriver: [POST] http://localhost:9515/session/8961e0bf64d61604d75207a6ed2f8239/element
+[0-1] 2022-08-06T07:03:50.053Z INFO webdriver: DATA {
+[0-1]   using: 'css selector',
+[0-1]   value: '[href="https://twitter.com/webdriverio"]'
+[0-1] }
+[0-1] 2022-08-06T07:03:50.068Z INFO webdriver: RESULT {
+[0-1]   'element-6066-11e4-a52e-4f735466cecf': '7adb2397-a60a-44bc-9042-2fb3bb0ad03e'
+[0-1] }
+[0-1] 2022-08-06T07:03:50.079Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+[0-1] 2022-08-06T07:03:50.080Z INFO webdriver: [POST] http://localhost:9515/session/8961e0bf64d61604d75207a6ed2f8239/execute/sync
+[0-1] 2022-08-06T07:03:50.080Z INFO webdriver: DATA {
+[0-1]   script: 'return (function (elem, options) {\n' +
+[0-1]     '        elem.scrollIntoView(options);\n' +
+[0-1]     '    }).apply(null, arguments)',
+[0-1]   args: [
+[0-1]     {
+[0-1]       'element-6066-11e4-a52e-4f735466cecf': '7adb2397-a60a-44bc-9042-2fb3bb0ad03e',
+[0-1]       ELEMENT: '7adb2397-a60a-44bc-9042-2fb3bb0ad03e'
+[0-1]     },
+[0-1]     true
+[0-1]   ]
+[0-1] }
+[0-1] 2022-08-06T07:03:50.116Z INFO webdriver: COMMAND findElement("css selector", "[href="https://twitter.com/webdriverio"]")
+[0-1] 2022-08-06T07:03:50.117Z INFO webdriver: [POST] http://localhost:9515/session/8961e0bf64d61604d75207a6ed2f8239/element
+[0-1] 2022-08-06T07:03:50.117Z INFO webdriver: DATA {
+[0-1]   using: 'css selector',
+[0-1]   value: '[href="https://twitter.com/webdriverio"]'
+[0-1] }
+[0-1] 2022-08-06T07:03:50.202Z INFO webdriver: RESULT {
+[0-1]   'element-6066-11e4-a52e-4f735466cecf': '7adb2397-a60a-44bc-9042-2fb3bb0ad03e'
+[0-1] }
+[0-1] 2022-08-06T07:03:50.207Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+[0-1] 2022-08-06T07:03:50.208Z INFO webdriver: [POST] http://localhost:9515/session/8961e0bf64d61604d75207a6ed2f8239/execute/sync
+[0-1] 2022-08-06T07:03:50.208Z INFO webdriver: DATA {
+[0-1]   script: 'isElementDisplayed(...) [7962 bytes]',
+[0-1]   args: [
+[0-1]     {
+[0-1]       'element-6066-11e4-a52e-4f735466cecf': '7adb2397-a60a-44bc-9042-2fb3bb0ad03e',
+[0-1]       ELEMENT: '7adb2397-a60a-44bc-9042-2fb3bb0ad03e'
+[0-1]     }
+[0-1]   ]
+[0-1] }
+[0-1] 2022-08-06T07:03:50.225Z INFO webdriver: RESULT true
+[0-1] Twitter isDisplayed: true
+[0-1] 2022-08-06T07:03:50.226Z INFO webdriver: COMMAND findElement("css selector", "[href="https://twitter.com/webdriverio"]")
+[0-1] 2022-08-06T07:03:50.227Z INFO webdriver: [POST] http://localhost:9515/session/8961e0bf64d61604d75207a6ed2f8239/element
+[0-1] 2022-08-06T07:03:50.227Z INFO webdriver: DATA {
+[0-1]   using: 'css selector',
+[0-1]   value: '[href="https://twitter.com/webdriverio"]'
+[0-1] }
+[0-1] 2022-08-06T07:03:50.245Z INFO webdriver: RESULT {
+[0-1]   'element-6066-11e4-a52e-4f735466cecf': '7adb2397-a60a-44bc-9042-2fb3bb0ad03e'
+[0-1] }
+[0-1] 2022-08-06T07:03:50.249Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+[0-1] 2022-08-06T07:03:50.250Z INFO webdriver: [POST] http://localhost:9515/session/8961e0bf64d61604d75207a6ed2f8239/execute/sync
+[0-1] 2022-08-06T07:03:50.250Z INFO webdriver: DATA {
+[0-1]   script: 'isElementDisplayed(...) [7962 bytes]',
+[0-1]   args: [
+[0-1]     {
+[0-1]       'element-6066-11e4-a52e-4f735466cecf': '7adb2397-a60a-44bc-9042-2fb3bb0ad03e',
+[0-1]       ELEMENT: '7adb2397-a60a-44bc-9042-2fb3bb0ad03e'
+[0-1]     }
+[0-1]   ]
+[0-1] }
+[0-1] 2022-08-06T07:03:50.272Z INFO webdriver: RESULT true
+[0-1] 2022-08-06T07:03:50.273Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+[0-1] 2022-08-06T07:03:50.273Z INFO webdriver: [POST] http://localhost:9515/session/8961e0bf64d61604d75207a6ed2f8239/execute/sync
+[0-1] 2022-08-06T07:03:50.274Z INFO webdriver: DATA {
+[0-1]   script: 'isElementInViewport(...) [564 bytes]',
+[0-1]   args: [
+[0-1]     {
+[0-1]       'element-6066-11e4-a52e-4f735466cecf': '7adb2397-a60a-44bc-9042-2fb3bb0ad03e',
+[0-1]       ELEMENT: '7adb2397-a60a-44bc-9042-2fb3bb0ad03e'
+[0-1]     }
+[0-1]   ]
+[0-1] }
+[0-1] 2022-08-06T07:03:50.288Z INFO webdriver: RESULT true
+[0-1] Twitter isDisplayedInViewport: true
+[0-1] 2022-08-06T07:03:50.290Z INFO webdriver: COMMAND findElement("css selector", "[href="/blog"]")
+[0-1] 2022-08-06T07:03:50.291Z INFO webdriver: [POST] http://localhost:9515/session/8961e0bf64d61604d75207a6ed2f8239/element
+[0-1] 2022-08-06T07:03:50.291Z INFO webdriver: DATA { using: 'css selector', value: '[href="/blog"]' }
+[0-1] 2022-08-06T07:03:50.320Z INFO webdriver: RESULT {
+[0-1]   'element-6066-11e4-a52e-4f735466cecf': '3317b3d3-10f6-49e8-9b85-b6a6fa0c7b17'
+[0-1] }
+[0-1] 2022-08-06T07:03:50.327Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+[0-1] 2022-08-06T07:03:50.327Z INFO webdriver: [POST] http://localhost:9515/session/8961e0bf64d61604d75207a6ed2f8239/execute/sync
+[0-1] 2022-08-06T07:03:50.327Z INFO webdriver: DATA {
+[0-1]   script: 'isFocused(...) [104 bytes]',
+[0-1]   args: [
+[0-1]     {
+[0-1]       'element-6066-11e4-a52e-4f735466cecf': '3317b3d3-10f6-49e8-9b85-b6a6fa0c7b17',
+[0-1]       ELEMENT: '3317b3d3-10f6-49e8-9b85-b6a6fa0c7b17'
+[0-1]     }
+[0-1]   ]
+[0-1] }
+[0-1] 2022-08-06T07:03:50.341Z INFO webdriver: RESULT false
+[0-1] BlogButton is focused:false
+[0-1] 2022-08-06T07:03:50.342Z INFO webdriver: COMMAND findElement("css selector", "[href="/blog"]")
+[0-1] 2022-08-06T07:03:50.342Z INFO webdriver: [POST] http://localhost:9515/session/8961e0bf64d61604d75207a6ed2f8239/element
+[0-1] 2022-08-06T07:03:50.342Z INFO webdriver: DATA { using: 'css selector', value: '[href="/blog"]' }
+[0-1] 2022-08-06T07:03:50.361Z INFO webdriver: RESULT {
+[0-1]   'element-6066-11e4-a52e-4f735466cecf': '3317b3d3-10f6-49e8-9b85-b6a6fa0c7b17'
+[0-1] }
+[0-1] 2022-08-06T07:03:50.368Z INFO webdriver: COMMAND elementClick("3317b3d3-10f6-49e8-9b85-b6a6fa0c7b17")
+[0-1] 2022-08-06T07:03:50.368Z INFO webdriver: [POST] http://localhost:9515/session/8961e0bf64d61604d75207a6ed2f8239/element/3317b3d3-10f6-49e8-9b85-b6a6fa0c7b17/click
+[0-1] 2022-08-06T07:03:50.582Z INFO webdriver: COMMAND findElement("css selector", "[href="/blog"]")
+[0-1] 2022-08-06T07:03:50.583Z INFO webdriver: [POST] http://localhost:9515/session/8961e0bf64d61604d75207a6ed2f8239/element
+[0-1] 2022-08-06T07:03:50.583Z INFO webdriver: DATA { using: 'css selector', value: '[href="/blog"]' }
+[0-1] 2022-08-06T07:03:50.937Z INFO webdriver: RESULT {
+[0-1]   'element-6066-11e4-a52e-4f735466cecf': '41d69e84-b0bd-4338-b3f8-1e9701cda577'
+[0-1] }
+[0-1] 2022-08-06T07:03:50.943Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+[0-1] 2022-08-06T07:03:50.943Z INFO webdriver: [POST] http://localhost:9515/session/8961e0bf64d61604d75207a6ed2f8239/execute/sync
+[0-1] 2022-08-06T07:03:50.944Z INFO webdriver: DATA {
+[0-1]   script: 'isFocused(...) [104 bytes]',
+[0-1]   args: [
+[0-1]     {
+[0-1]       'element-6066-11e4-a52e-4f735466cecf': '41d69e84-b0bd-4338-b3f8-1e9701cda577',
+[0-1]       ELEMENT: '41d69e84-b0bd-4338-b3f8-1e9701cda577'
+[0-1]     }
+[0-1]   ]
+[0-1] }
+[0-1] 2022-08-06T07:03:51.149Z INFO webdriver: RESULT false
+[0-1] BlogButton is focused:false
+[0-1] 2022-08-06T07:03:51.156Z INFO webdriver: COMMAND deleteSession()
+[0-1] 2022-08-06T07:03:51.156Z INFO webdriver: [DELETE] http://localhost:9515/session/8961e0bf64d61604d75207a6ed2f8239
+[0-1] PASSED in chrome - C:\Users\user\Desktop\Test Project\test\specs\Home.work.lesson.14 .js
+2022-08-06T07:03:51.692Z INFO @wdio/cli:launcher: Run onWorkerEnd hook
+2022-08-06T07:03:51.693Z INFO @wdio/cli:launcher: Run onComplete hook
